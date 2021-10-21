@@ -33,23 +33,21 @@
 				//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 				//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 				//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-				embedded_svc.settings.prepopulatedPrechatFields = {
-					Origin:"Chat"
-				}; //Sets the auto-population of pre-chat form fields
+
 				embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 				embedded_svc.settings.entryFeature = 'LiveAgent';
 
 				embedded_svc.init(
-					'https://blueacorncorp--scdev.my.salesforce.com',
-					'https://scdev-blueacorn.cs27.force.com',
+					'https://blueacorncorp--staging.my.salesforce.com',
+					'https://staging-blueacorn.cs215.force.com',
 					gslbBaseURL,
-					'00D22000000DNWD',
+					'00D8B0000008hXJ',
 					'Chat_Team',
 					{
-						baseLiveAgentContentURL: 'https://c.la1-c1cs-ph2.salesforceliveagent.com/content',
-						deploymentId: '572220000004Ccd',
-						buttonId: '573220000004CST',
-						baseLiveAgentURL: 'https://d.la1-c1cs-ph2.salesforceliveagent.com/chat',
+						baseLiveAgentContentURL: 'https://c.la5-c1cs-ia4.salesforceliveagent.com/content',
+						deploymentId: '5728B0000004CA1',
+						buttonId: '5738B0000004C9D',
+						baseLiveAgentURL: 'https://d.la5-c1cs-ia4.salesforceliveagent.com/chat',
 						eswLiveAgentDevName: 'Chat_Team',
 						isOfflineSupportEnabled: true
 					}
@@ -58,7 +56,7 @@
 
 			if (!window.embedded_svc) {
 				var s = document.createElement('script');
-				s.setAttribute('src', 'https://blueacorncorp--scdev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+				s.setAttribute('src', 'https://blueacorncorp--staging.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 				s.onload = function() {
 					initESW(null);
 				};
