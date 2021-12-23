@@ -21,7 +21,19 @@
 				//Only match Contacts on Email
 				embedded_svc.settings.extraPrechatInfo = [{
 				  "entityFieldMaps": [{
-				    "doCreate":true,
+				    "doCreate":false,
+				    "doFind":false,
+				    "fieldName":"LastName",
+				    "isExactMatch":true,
+				    "label":"Last Name"
+				  }, {
+				    "doCreate":false,
+				    "doFind":false,
+				    "fieldName":"FirstName",
+				    "isExactMatch":true,
+				    "label":"First Name"
+				  }, {
+				    "doCreate":false,
 				    "doFind":true,
 				    "fieldName":"Email",
 				    "isExactMatch":true,
